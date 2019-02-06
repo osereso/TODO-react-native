@@ -18,9 +18,14 @@ export default class Main extends Component {
               placeHolder=">note"
               placeholderTextColor="white"
               underlineColorAndroid="transparent">
-
             </TextInput>
           </View>
+          
+          <TouchableOpacity style={styles.addButton}>
+            <Text style={styles.addButtonText}>
+              +
+            </Text>
+          </TouchableOpacity>
 
       </View>
     );
@@ -43,7 +48,7 @@ const styles = StyleSheet.create({
   headerText: {
     color: 'white',
     fontSize: 18,
-    padding: 26
+    padding: 40
   },
 
   scrollContainer: {
@@ -79,7 +84,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     alignItems: 'center',
     justifyContent: 'center',
-    elevation: 8
+    elevation: 8,
   },
 
   addButtonText: {
