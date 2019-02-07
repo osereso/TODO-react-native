@@ -35,6 +35,7 @@ export default class Main extends Component {
           </ScrollView>
           <View style={styles.footer}>
             <TextInput 
+              placeholder="          > add a new note"
               style={styles.textInput}
               onChangeText={(noteText) => this.setState({noteText})}
               value={this.state.noteText}
@@ -82,21 +83,21 @@ export default class Main extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white'
+    backgroundColor: '#F9F9F9'
   },
 
   header: {
-    backgroundColor: '#E91E63',
+    backgroundColor: '#DB4A49',
     alignItems: 'center',
     justifyContent: 'center',
-    borderBottomWidth: 10,
+    borderBottomWidth: 8,
     borderBottomColor: '#ddd'
   },
 
   headerText: {
-    color: 'white',
+    color: '#FEFFFF',
     fontSize: 18,
-    padding: 40
+    padding: 40,
   },
 
   scrollContainer: {
@@ -114,21 +115,21 @@ const styles = StyleSheet.create({
 
   textInput: {
     alignSelf: 'stretch',
-    color: '#fff',
+    color: '#F9F9FA',
     padding: 20,
-    backgroundColor: '#252525',
-    borderTopWidth: 2,
-    borderTopColor: '#ededed'
+    backgroundColor: '#353A41',
+    borderTopWidth: 8,
+    borderTopColor: '#ddd'
   },
 
   addButton: {
     position: 'absolute',
     zIndex: 11,
-    right: 20,
-    bottom: 90,
-    backgroundColor: '#E91E63',
-    width: 90,
-    height: 90,
+    right: 13,
+    bottom: 75,
+    backgroundColor: '#2FA4FF',
+    width: 70,
+    height: 70,
     borderRadius: 50,
     alignItems: 'center',
     justifyContent: 'center',
@@ -136,8 +137,8 @@ const styles = StyleSheet.create({
   },
 
   addButtonText: {
-    color: '#fff',
-    fontSize: 24,
+    color: '#FEFFFF',
+    fontSize: 50,
   },
 
 });
