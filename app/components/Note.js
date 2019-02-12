@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
+const ICON_SIZE = 30;
 export default class Note extends Component {
   render() {
     return (
@@ -14,9 +16,7 @@ export default class Note extends Component {
             <TouchableOpacity 
                 onPress={this.props.deleteMethod}
                 style={styles.noteDelete}>
-                <Text style={styles.noteDeleteText}>
-                    D
-                </Text>
+                    <Icon style={styles.deleteIcon} name="delete-outline" size={ICON_SIZE} color="red" />
             </TouchableOpacity>
 
         </View>
@@ -53,6 +53,10 @@ const styles = StyleSheet.create({
 
   noteDeleteText: {
       color: 'white',
+  },
+
+  deleteIcon: {
+
   },
 
 });

@@ -58,9 +58,7 @@ export default class Main extends Component {
   }
 
   addNote() {
-
     if (this.state.noteText) {
-
       var d = new Date();
       this.state.noteArray.push({
         'date': d.getFullYear() + 
@@ -77,7 +75,6 @@ export default class Main extends Component {
     this.state.noteArray.splice(key, 1);
     this.setState({ noteArray: this.state.noteArray })
   }
-
 }
 
 const styles = StyleSheet.create({
